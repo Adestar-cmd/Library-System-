@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f8fa;
+    color: #172033;
+}
+
+
+/* Navbar */
+
+.navbar {
+    background: #ffffff;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 20px 0;
+}
+
+.logo {
+    text-decoration: none;
+    color: #172033;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #315efb;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555d6d;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #315efb;
+}
+
+
+/* Search Section */
+
+.search-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.search-content {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+.small-title {
+    color: #315efb;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.search-content h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.search-content h1 span {
+    color: #315efb;
+}
+
+.description {
+    color: #687083;
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+
+/* Search Box */
+
+.search-box {
+    display: flex;
+    max-width: 650px;
+    margin: auto;
+    background: #ffffff;
+    border: 1px solid #dfe3ea;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 15px;
+    background: transparent;
+}
+
+.search-box button {
+    border: none;
+    background: #315efb;
+    color: white;
+    padding: 0 28px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.search-box button:hover {
+    background: #244bd1;
+}
+
+
+/* Error */
+
+#errorMsg {
+    margin-top: 20px;
+}
+
+
+/* Search Result */
+
+.result-section {
+    padding: 30px 0;
+}
+
+#display {
+    max-width: 650px;
+    margin: auto;
+}
+
+#display h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#display p {
+    color: #626b7c;
+    margin-bottom: 8px;
+}
+
+
+/* Books Section */
+
+.books-section {
+    padding: 90px 0;
+    background: #f7f8fa;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.section-heading > p:last-child {
+    color: #687083;
+}
+
+
+/* Book Cards */
+
+.book-card {
+    background: #ffffff;
+    border: 1px solid #e6e8ed;
+    border-radius: 12px;
+    height: 100%;
+    transition: 0.2s;
+}
+
+.book-card:hover {
+    border-color: #315efb;
+    transform: translateY(-3px);
+}
+
+.book-card-top {
+    height: 120px;
+    background: #eef2ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px 12px 0 0;
+}
+
+.book-icon {
+    font-size: 40px;
+    color: #315efb;
+}
+
+.book-card-body {
+    padding: 25px;
+}
+
+.book-card-body h3 {
+    font-size: 21px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.book-card-body p {
+    color: #687083;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.book-card-body strong {
+    color: #172033;
+}
+
+
+/* Footer */
+
+footer {
+    background: #172033;
+    color: #ffffff;
+    padding: 45px 0;
+    text-align: center;
+}
+
+footer h3 {
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #aeb5c3;
+    font-size: 14px;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .search-section {
+        padding: 70px 20px;
+    }
+
+    .search-content h1 {
+        font-size: 38px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        border: none;
+        gap: 10px;
+    }
+
+    .search-box input {
+        border: 1px solid #dfe3ea;
+        border-radius: 8px;
+        padding: 15px;
+    }
+
+    .search-box button {
+        padding: 15px;
+    }
+
+    .books-section {
+        padding: 60px 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .navbar {
+        padding: 15px 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .search-content h1 {
+        font-size: 32px;
+    }
+}
